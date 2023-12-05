@@ -417,7 +417,7 @@ header::before {
     transform-origin: left;
     border-radius: 0.7rem;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 @keyframes animate {
@@ -433,7 +433,7 @@ header::before {
     transform: scaleX(0);
     transform-origin: left;
     background-color: var(--primary);
-    animation: animate 1s 3s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 0.5s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .bar .progress-line.html span {
@@ -441,18 +441,18 @@ header::before {
 }
 
 .bar .progress-line.css span {
-    width: 60%;
+    width: 80%;
 }
 
-.bar .progress-line.jquery span {
-    width: 85%;
+.bar .progress-line.javascript span {
+    width: 65%;
 }
 
 .bar .progress-line.python span {
-    width: 50%;
+    width: 65%;
 }
 
-.bar .progress-line.mysql span {
+.bar .progress-line.DataScience span {
     width: 75%;
 }
 
@@ -497,18 +497,18 @@ header::before {
 }
 
 .progress-line.css span::after {
-    content: "60%";
+    content: "80%";
 }
 
-.progress-line.jquery span::after {
-    content: "85%";
+.progress-line.javascript span::after {
+    content: "65%";
 }
 
 .progress-line.python span::after {
-    content: "50%";
+    content: "65%";
 }
 
-.progress-line.mysql span::after {
+.progress-line.DataScience span::after {
     content: "75%";
 }
 
@@ -533,18 +533,18 @@ header::before {
     width: 20rem;
     margin: 1.2rem;
     border-radius: 0.3rem;
-    overflow: hidden;
+    overflow: initial;
     box-shadow: 0 3px 5px var(--primary);
 }
 
 .gallery a img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: inherit;
 }
 
 .gallery a img:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 /* ======COURSES======= */
